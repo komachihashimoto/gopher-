@@ -1,0 +1,245 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gopher {
+  width: 200px;
+  height: 300px;
+  background-color: rgb(137, 229, 255);
+  border-radius: 90px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  box-shadow: inset -4px -4px 30px 0px rgba(53, 191, 255, 0.45)
+}
+
+.eyes {
+  display: flex;
+  margin: 15px 5px 0 5px;
+}
+
+.left-eye {
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 15px 10px 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset -4px -4px 10px 0px rgba(114, 210, 255, 0.45)
+}
+
+.left-in-eye {
+  background-color: #000;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  box-shadow: inset -4px -4px 5px 0px rgba(181, 181, 181, 0.45)
+}
+
+.right-eye {
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 15px 5px 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset -4px -4px 10px 0px rgba(114, 210, 255, 0.45)
+}
+
+.right-in-eye {
+  background-color: #000;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  box-shadow: inset -4px -4px 5px 0px rgba(181, 181, 181, 0.45)
+}
+
+.eye-light {
+  background-color: #fff;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  margin-top: 2px;
+}
+
+.teeth {
+  background-color: #fff;
+  position: relative;
+  top: -2px;
+  height: 10px;
+  width: 25px;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset -4px -4px 5px 0px rgba(219, 219, 219, 0.45)
+}
+
+.teeth-line {
+  background-color: rgb(230, 230, 230);
+  width: 1px;
+  height: 10px;
+  box-shadow: 0 1px 1px rgb(207, 207, 207);
+}
+
+.mouth {
+  background-color: rgb(255, 225, 207);
+  width: 50px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  box-shadow: inset -4px -4px 5px 0px rgba(187, 187, 187, 0.45)
+}
+
+.nose {
+  background-color: #000;
+  width: 25px;
+  height: 15px;
+  border-radius: 50%;
+  box-shadow: inset 2px 2px 5px 0px rgba(183, 183, 183, 0.45)
+}
+
+.stomach {
+  height: 160px;
+  width: 160px;
+  background-color: rgb(152, 233, 255);
+  border-radius: 50%;
+  margin: 20px 0 0 0;
+  box-shadow: inset -4px -4px 30px 0px rgba(139, 218, 255, 0.45)
+}
+
+.l-ear {
+  position: relative;
+  top: -123px;
+  left: -200px;
+  background-color: rgb(137, 229, 255);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  box-shadow: inset -4px -4px 5px 0px rgba(105, 176, 212, 0.45);
+}
+
+.r-ear {
+  position: relative;
+  top: -123px;
+  left: -60px;
+  background-color: rgb(137, 229, 255);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  box-shadow: inset 4px -4px 5px 0px rgba(105, 176, 212, 0.45);
+}
+
+.l-in-ear {
+  background-color: rgb(56, 169, 201);
+  height: 15px;
+  width: 15px;
+  margin: 5px 0 0 5px;
+  border-radius: 50%;
+  box-shadow: inset -2px -2px 5px 0px rgba(183, 183, 183, 0.45);
+}
+
+.r-in-ear {
+  background-color: rgb(56, 169, 201);
+  height: 15px;
+  width: 15px;
+  margin: 5px 5px 0 0;
+  border-radius: 50%;
+  box-shadow: inset 2px -2px 5px 0px rgba(183, 183, 183, 0.45);
+}
+
+.l-hand {
+  position: relative;
+  top: 45px;
+  left: -270px;
+  background-color: rgb(255, 225, 207);
+  height: 25px;
+  width: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: inset -2px -2px 5px 0px rgba(183, 183, 183, 0.45);
+}
+
+.r-hand {
+  position: relative;
+  top: 45px;
+  left: -81px;
+  background-color: rgb(255, 225, 207);
+  height: 25px;
+  width: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: inset 2px -2px 5px 0px rgba(183, 183, 183, 0.45);
+}
+
+.l-foot {
+  position: relative;
+  top: 145px;
+  left: -250px;
+  background-color: rgb(255, 225, 207);
+  height: 25px;
+  width: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: inset -2px -2px 5px 0px rgba(183, 183, 183, 0.45);
+}
+
+.r-foot {
+  position: relative;
+  top: 145px;
+  left: -160px;
+  background-color: rgb(255, 225, 207);
+  height: 25px;
+  width: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: inset 2px -2px 5px 0px rgba(183, 183, 183, 0.45);
+}
+
+.shadow {
+  z-index: 0;
+  position: relative;
+  width: 300px;
+  height: 50px;
+  background-color: rgba(183, 183, 183, 0.2);
+  border-radius: 50%;
+  top: 147px;
+  left: -280px;
+  box-shadow: 0 0 9px rgba(183, 183, 183, 0.45);
+}
