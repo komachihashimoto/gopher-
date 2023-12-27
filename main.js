@@ -16,8 +16,9 @@ function playJump() {
   Jump.play();
 }
 
-document.body.onkeyup = function (e){
+function handleKeyUp(e){
   if(e.keyCode == 32){
+      document.body.removeEventListener('keyup', handleKeyUp); // スペースキーが押されたときにイベントリスナーを削除します
       animation.pause(); // スペースキーが押されたときにアニメーションを一時停止します
       anime({
           targets: '.container',
@@ -27,10 +28,13 @@ document.body.onkeyup = function (e){
           ],
           complete: function() { // アニメーションが完了したら
             animation.play(); // 元のアニメーションを再開します
+            document.body.addEventListener('keyup', handleKeyUp); // アニメーションが完了したらイベントリスナーを再度追加します
           }
       });
       playJump();
   }
 }
+
+document.body.addEventListener('keyup', handleKeyUp); // イベントリスナーを追加します
 
 animation.play(); // 初期アニメーションの再生を開始します
