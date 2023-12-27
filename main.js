@@ -31,6 +31,13 @@ function handleKeyUp(e){
             document.body.addEventListener('keyup', handleKeyUp); // アニメーションが完了したらイベントリスナーを再度追加します
           }
       });
+      anime({
+        targets: '.shadow',
+        keyframes: [
+            {translateX: 300, duration: 300, easing:'easeOutQuad'},
+            {translateX: 0, duration: 300, easing:'easeInQuad'}
+        ]
+    });
       playJump();
   }
 }
