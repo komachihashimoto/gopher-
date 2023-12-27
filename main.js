@@ -7,6 +7,7 @@ let animation1 = anime({
   easing: 'linear',
   loop: true,
   direction: 'alternate',
+  autoplay: true,
 });
 
 let animation2 = anime({
@@ -16,6 +17,7 @@ let animation2 = anime({
   easing: 'easeInOutSine',
   direction: 'alternate',
   loop: true,
+  autoplay: true,
 });
 
 let animation3 = anime({
@@ -25,6 +27,7 @@ let animation3 = anime({
   easing: 'easeInOutSine',
   direction: 'alternate',
   loop: true,
+  autoplay: true,
 });
 
 
@@ -63,4 +66,4 @@ function handleKeyUp(e){
 
 document.body.addEventListener('keyup', handleKeyUp); // イベントリスナーを追加します
 
-animation.play(); // 初期アニメーションの再生を開始します
+(animation1, animation2, animation3).play(); // 初期アニメーションの再生を開始します
