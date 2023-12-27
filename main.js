@@ -21,7 +21,7 @@ function handleKeyUp(e){
       document.body.removeEventListener('keyup', handleKeyUp); // スペースキーが押されたときにイベントリスナーを削除します
       animation.pause(); // スペースキーが押されたときにアニメーションを一時停止します
       anime({
-          targets: '.container',
+          targets: '.container > :not(.shadow)', // '.shadow'クラスを除外します
           keyframes: [
               {translateY: -300, duration: 300, easing:'easeOutQuad'},
               {translateY: 0, duration: 300, easing:'easeInQuad'}
