@@ -2,7 +2,7 @@
 
 let animation1 = anime({
   targets: '.container',
-  translateX: 500, 
+  translateX: 1000, 
   duration: 2000,
   easing: 'linear',
   loop: true,
