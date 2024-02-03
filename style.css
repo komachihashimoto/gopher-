@@ -244,3 +244,13 @@ body {
   left: -280px;
   box-shadow: 0 0 9px rgba(183, 183, 183, 0.45);
 }
+
+.btn {
+  position: relative;
+  border: lightskyblue 2px;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 9px inset rgba(31, 120, 255, 0.8);
+  padding: 10px 20px;
+  left: -280px;
+}
